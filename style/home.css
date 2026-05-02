@@ -1,112 +1,43 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-h1, h2, h3 {
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 1.2;
-  margin-bottom: .5em;
-}
-header {
-  background: rgb(57, 48, 48);
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-.bar {
-  background: red;
-  font-size: .8rem;
-  padding: .4rem 0;
-  text-align: center;
-}
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: .8rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-}
-.badge { display: flex; 
-    align-items: center; 
-    gap: .7rem; 
-    color: #fff; 
-}
-.badge img { width: 42px; 
-    height: 42px; 
-}
-.badge b {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  color: rgb(222, 222, 118);
-}
-.badge small {
-  display: block;
-  font-size: .7rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: #bbb;
-}
-.menu { display: flex; 
-    gap: .3rem; 
-    list-style: none; 
-}
-.menu a {
-  color: #fff;
-  padding: .5rem .9rem;
-  border-radius: 3px;
-  font-weight: 600;
-}
-.menu a:hover, .menu a.active {
-  background: rgb(222, 222, 118);
-  color: black;
-  text-decoration: none;
-}
-
-body {
-    color: #333;
-   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(bishopblock.jpg);
+.top{
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)), url('../images/bishopblock.jpg');   
     background-size: cover;
     background-position: center;
-    margin: o;
-}
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
 
-
-.mainInfo {
-    padding: 40px 10%;
-    
-}
+  }
 
 .welcome-sec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .welcome-sec h1 {
-    color: #630e10;
+    padding-top: 20px;
+    color: rgb(216, 206, 206);
     font-size: 3.2rem;
     margin-bottom: 10px;
     font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .welcome-message {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #000;
+    color: rgb(216, 206, 206);
     line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .apply-div {
     text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 80px;
+}
+
+.apply-div a:hover{
+  background-color: #e5c167;
 }
 
 .yellow {
@@ -120,12 +51,11 @@ body {
     display: inline-block;
 }
 
-
-
 .why-container {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    padding: 40px 10%;
 }
 
 .Academic, .character, .christian {
@@ -133,7 +63,7 @@ body {
     padding: 25px;
     flex: 1;
     border: 1px solid #ddd;
-    border-top: 5px solid rgb(222, 222, 118) ;
+    border-top: 5px solid rgb(255, 0, 0) ;
     text-align: center;
     border-radius: 5px;
 }
@@ -143,28 +73,36 @@ body {
     color: #630e10;
 }
 
-footer {
-  background: rgb(57, 48, 48);
-  color: #ccc;
-  padding: 2.5rem 0 1rem;
-  border-top: 5px solid rgb(222, 222, 118);
-}
-footer h4 {
-  color: rgb(222, 222, 118);
-  margin-bottom: .6rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-footer a { color: #ccc; }
-footer a:hover { color: rgb(222, 222, 118); }
-.foot-grid {
+.grid {
+  padding: auto;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin-bottom: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
 }
-.copy-right {
-  border-top: 1px solid #bfbbbb;
-  padding-top: 1rem;
+
+.stat {
   text-align: center;
-  font-size: .85rem;
+  padding: 40px 20px;
+  background-color:#2e2a2a; 
+  border-radius: 20px; 
+  color: #ffffff;
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stat b {
+  display: block;
+  color: #e5c167; 
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

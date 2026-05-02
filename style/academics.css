@@ -12,10 +12,6 @@ h2{
     font-size: 20px;
     text-align: center;
 }
-body{
-  background-color: rgb(218, 208, 208);
- 
-}
 
 .rule {
   height: 4px;
@@ -68,11 +64,9 @@ tbody tr:nth-child(odd) td {
   height: 500px;
   border-radius:10px;
   opacity:0.8;
-  
   background-image: url('../images/evoting.jpg');
   background-size: cover;
   background-position:center;
-
   position: relative;
 }
 
@@ -94,75 +88,3 @@ tbody tr:nth-child(odd) td {
   opacity: 1;
 }
 
-
-header {
-  background: rgb(57, 48, 48);
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.badge img { width: 42px; 
-    height: 42px; 
-}
-.badge b {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  color: rgb(222, 222, 118);
-}
-.badge small {
-  display: block;
-  font-size: .7rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: #bbb;
-}
-
-
-.nav-bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: .8rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.menu { display: flex; 
-    gap: .3rem; 
-    list-style: none; 
-}
-.menu a {
-  color: #fff;
-  padding: .5rem .9rem;
-  border-radius: 3px;
-  font-weight: 600;
-}
-.menu a:hover, .menu a.active {
-  background: rgb(222, 222, 118);
-  color: black;
-  text-decoration: none;
-}
-
-
-footer {
-  background: rgb(57, 48, 48);
-  color: #ccc;
-  padding: 2.5rem 0 1rem;
-  border-top: 5px solid rgb(222, 222, 118);
-  margin-top:auto;
-  width:100%;
-}
-.foot-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin-bottom: 1.5rem;
-}
-.copy-right {
-  border-top: 1px solid #bfbbbb;
-  padding-top: 1rem;
-  text-align: center;
-  font-size: .85rem;
-}
