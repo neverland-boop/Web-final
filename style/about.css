@@ -39,11 +39,10 @@ section { padding: 3rem 0; }
  
 }
 .card {
-    display: flex;
+  grid-template-columns: repeat(3, 1fr);
   background: rgb(166, 163, 163);
   border: 1px solid var(--line);
   border-top: 4px solid yellow;
-  position: relative;
   padding: 20px;
   border-radius: 20px;
 }
