@@ -52,10 +52,11 @@
 }
 
 .why-container {
-    display: flex;
     gap: 20px;
     justify-content: space-between;
-    padding: 40px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    padding: 40px 5%;
 }
 
 .Academic, .character, .christian {
