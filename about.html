@@ -13,6 +13,7 @@
 <header>
   <div class="nav-bar">
     <a class="badge" href="index.html"><img src="images/badge.png" alt="badge"><span><b>MENGO SENIOR SCHOOL</b><small>Akwana Akira Ayomba</small></span></a>
+    <button id="burger" class="burger-btn">☰</button>
     <ul class="menu" id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html"  class="active">About</a></li>
@@ -96,5 +97,13 @@
     <div class="copy-right">© 2026 Mengo Senior School. All rights reserved.</div>
   </div>
 </footer>
+<script>
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+burger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
 </body>
 </html>

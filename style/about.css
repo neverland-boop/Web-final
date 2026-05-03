@@ -111,3 +111,22 @@ section { padding: 3rem 0; }
   border-spacing: 10px;
   
 }
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column; 
+    display: block; 
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .admin-grid, .foot-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-card {
+    border-radius: 20px;
+  }
+}

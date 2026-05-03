@@ -88,3 +88,14 @@ tbody tr:nth-child(odd) td {
   opacity: 1;
 }
 
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  .aa h1 {
+    font-size: 30px;
+  }
+}
